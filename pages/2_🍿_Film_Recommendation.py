@@ -7,7 +7,7 @@ import google.generativeai as genai
 st.set_page_config(page_title="Film Recommender", page_icon="🍿")
 
 
-API_KEY = open("api.txt", "r").read()  # Replace with your actual API key
+API_KEY = open("api.txt", "r").read().strip()  # Replace with your actual API key
 
 def generate_recommendation(prompt):
   """
